@@ -1,0 +1,56 @@
+/* 
+    Variables CSS / Custom properties
+    super-azul: #72c0c0
+*/
+
+/* 
+El punto mas alto del documento :root  Aca se declaran las variables para todo el documento.
+*/
+
+:root {
+    --azul: #72c0c0;
+    --naranja: #f90;
+    --negro: #000;
+    --blanco: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--azul);
+    background-image: url(images/pattern.jpg);
+    /* 
+    background-repeat: repeat | none | repeat-x | repeat-y 
+    */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: var(--naranja);
+}
+
+.logo {
+    padding: 5px;
+}
+
+.cabecera, .contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contenedor {
+    background-color: var(--blanco);
+}
+
+.cabecera {
+    display: flex;
+    color: var(--naranja);
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+    padding: 5px 0px 0px 5px;
+}
