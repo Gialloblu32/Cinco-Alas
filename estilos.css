@@ -12,6 +12,7 @@ El punto mas alto del documento :root  Aca se declaran las variables para todo e
     --naranja: #f90;
     --negro: #000;
     --blanco: #FFF;
+    --amarillo: #f8c009;
 }
 
 * {
@@ -44,6 +45,8 @@ h1 {
 
 .contenedor {
     background-color: var(--blanco);
+    border-radius: 10px 10px 0 0;
+
 }
 
 .cabecera {
@@ -54,3 +57,48 @@ h1 {
     align-items: center;
     padding: 5px 0px 0px 5px;
 }
+
+/* ACA EMPIEZA LA NAV BAR */
+
+.nav {
+    background-color: var(--naranja);
+    display: flex;
+    padding: 10px;
+    padding-left: 45px;
+    border-radius: 10px 10px 0 0;
+}
+
+.nav-lista,
+.nav-form {
+    flex-grow: 1;
+}
+
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+}
+
+.nav-form {
+    border-color: var(--negro);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-lista_item-link {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 20px;
+    display: block;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-right: 1px solid var(--amarillo);
+}
+
+.nav-lista_item-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
